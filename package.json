@@ -7,11 +7,6 @@
     "serve": "vite preview",
     "lint": "eslint src --ext .ts,.vue"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
   "dependencies": {
     "vue": "^3.2.16"
   },
