@@ -5,7 +5,7 @@ axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 10000;
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8';
 axios.interceptors.request.use(
-  (config): AxiosRequestConfig<any> => {
+  (config): AxiosRequestConfig => {
     const token = window.sessionStorage.getItem('token');
     if (token) {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
