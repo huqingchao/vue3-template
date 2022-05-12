@@ -8,7 +8,8 @@
   defineProps<{ msg: string }>();
 
   const count = ref(0);
-  const { name    } = storeToRefs(mainStore);
+  const { name } = storeToRefs(mainStore);
+
   name.value = 'aa';
 </script>
 
