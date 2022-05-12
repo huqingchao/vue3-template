@@ -9,7 +9,7 @@
 
   const count = ref(0);
   const { name } = storeToRefs(mainStore);
-  let a;
+  const a;
   name.value = 'aa';
 </script>
 
