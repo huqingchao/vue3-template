@@ -6,7 +6,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "prepare": "husky install",
-    "lint": "eslint src --ext .ts,.vue"
+    "lint": "eslint src --ext .ts,.vue",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
