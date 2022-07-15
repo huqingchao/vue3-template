@@ -1,5 +1,5 @@
 <template>
-  <div>Home1</div>
+  <HelloWorld msg="test props"></HelloWorld>
 </template>
 
 <script setup lang="ts"></script>

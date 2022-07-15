@@ -1,5 +1,5 @@
 <template>
-  <div>login</div>
+  <div style="margin-bottom: 20px">login</div>
   <div class="btn" @click="go">登录</div>
 </template>
 
@@ -17,6 +17,7 @@
     width: 200px;
     border-radius: 10px;
     margin: 0 auto;
+    padding: 5px 0;
     cursor: pointer;
   }
 </style>

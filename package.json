@@ -1,6 +1,8 @@
 {
-  "name": "my-vue-app",
+  "name": "vue3-template",
   "version": "0.0.7",
+  "author": "hqc",
+  "description": "a vue3 template",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -13,8 +15,23 @@
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huqingchao/vue3-template.git"
+  },
+  "keywords": [
+    "vue3",
+    "ts",
+    "vite",
+    "template"
+  ],
+  "bugs": {
+    "url": "https://github.com/huqingchao/vue3-template/issues"
+  },
+  "homepage": "https://github.com/huqingchao/vue3-template#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "element-plus": "^2.2.9",
     "pinia": "^2.0.14",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
@@ -37,6 +54,8 @@
     "lint-staged": "^12.4.1",
     "prettier": "^2.4.1",
     "typescript": "^4.4.3",
+    "unplugin-auto-import": "^0.9.3",
+    "unplugin-vue-components": "^0.21.1",
     "vite": "^2.6.4",
     "vue-tsc": "^0.3.0"
   },

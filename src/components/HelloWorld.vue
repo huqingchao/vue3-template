@@ -1,39 +1,32 @@
 <script setup lang="ts">
-  import { useMainStore } from '/@/store/main';
+  import { useMainStore } from '/@/store/user';
   import { storeToRefs } from 'pinia';
   import { ref } from 'vue';
 
-  const mainStore = useMainStore();
-
   defineProps<{ msg: string }>();
-
+  const mainStore = useMainStore();
   const count = ref(0);
   const { name } = storeToRefs(mainStore);
-  name.value = 'aa';
-  console.log('test1');
+  const { changeName } = mainStore;
+  const input = ref('');
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-  <button type="button" @click="count++">count is: {{ count }}</button>
-  <div>pinia:{{ name }}</div>
-  <div>test1111</div>
+  <div>组件prop msg: {{ msg }}</div>
+
+  <el-button @click="count++">count is: {{ count }}</el-button>
+
+  <div>pinia state name is: {{ name }}</div>
+
+  <el-input v-model="input" placeholder="Please input" @input="changeName" />
 </template>
 
-<style scoped>
-  a {
-    color: #42b983;
+<style lang="less" scoped>
+  div,
+  .el-button {
+    margin-bottom: 20px;
   }
-
-  label {
-    margin: 0 0.5em;
-    font-weight: bold;
-  }
-
-  code {
-    background-color: #eee;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: #304455;
+  .el-input {
+    width: 200px;
   }
 </style>
