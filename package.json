@@ -1,6 +1,6 @@
 {
   "name": "my-vue-app",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -8,8 +8,7 @@
     "prepare": "husky install",
     "lint": "eslint src --ext .ts,.vue",
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
