@@ -10,7 +10,7 @@
   const count = ref(0);
   const { name } = storeToRefs(mainStore);
   name.value = 'aa';
-  console.log('test');
+  console.log('test1');
 </script>
 
 <template>
