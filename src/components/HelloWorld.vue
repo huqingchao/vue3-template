@@ -17,6 +17,7 @@
   <h1>{{ msg }}</h1>
   <button type="button" @click="count++">count is: {{ count }}</button>
   <div>pinia:{{ name }}</div>
+  <div>test11</div>
 </template>
 
 <style scoped>
