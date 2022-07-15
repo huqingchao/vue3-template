@@ -25,7 +25,7 @@ https://huqingchao.github.io/vue3-template
 ```sh
 git clone https://github.com/huqingchao/vue3-template.git
 ```
-###安装依赖
+### 安装依赖
 
 ```sh
 npm install
